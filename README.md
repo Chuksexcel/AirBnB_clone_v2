@@ -99,11 +99,11 @@ Advanced syntax is implemented for the following commands:
 
     * all - Shows all objects the program has access to, or all objects of a given class
 
-        * count - Return number of object instances by class
+    * count - Return number of object instances by class
 
     * show - Shows an object based on class and UUID
 
-        * destroy - Destroys an object based on class and UUID
+    * destroy - Destroys an object based on class and UUID
 
     * update - Updates existing attributes an object based on class name and UUID
 
@@ -155,7 +155,7 @@ Usage: <class_name>.all()
 ```
 (hbnb) User.all()
 ["[User] (99f45908-1d17-46d1-9dd2-b7571128115b) {'updated_at': datetime.datetime(2020, 2, 19, 21, 47, 34, 92071), 'id': '99f45908-1d17-46d1-9dd2-b7571128115b', 'created_at': datetime.datetime(2020, 2, 19, 21, 47, 34, 92056)}", "[User] (98bea5de-9cb0-4d78-8a9d-c4de03521c30) {'updated_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134362), 'id': '98bea5de-9cb0-4d78-8a9d-c4de03521c30', 'created_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134343)}"]
-
+```
 ###### Example 1: Destroy a User
 Usage: <class_name>.destroy(<_id>)
 ```
@@ -179,5 +179,3 @@ Usage: <class_name>.update(<_id>, <dictionary>)
 (hbnb)
 (hbnb) User.all()
 (hbnb) ["[User] (98bea5de-9cb0-4d78-8a9d-c4de03521c30) {'updated_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134362), 'name': 'Fred the Frog', 'age': 9, 'id': '98bea5de-9cb0-4d78-8a9d-c4de03521c30', 'created_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134343)}"]
-```
-<br>
